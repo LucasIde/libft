@@ -6,21 +6,24 @@
 #    By: lide <lide@student.s19.be>                 +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/04 19:01:47 by lide              #+#    #+#              #
-#    Updated: 2022/01/05 14:02:36 by lide             ###   ########.fr        #
+#    Updated: 2022/01/05 15:21:01 by lide             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
 CC			= gcc
 FLAGS		= -Wall -Wextra -Werror
-SRCS		= *.c
-OBJ			= $(SRCS:.c=.o)
+SRCS		= ${wildcard *.c}
+OBJS		= $(SRCS:.c=.o)
 RM			= rm -f
-.c.o:
+
+%.o:%.c
 			${CC} ${FLAGS} -c $< -o $@
+
 ${NAME}:	${OBJS}
 			ar -rc ${NAME} ${OBJS}
 			ranlib ${NAME}
+
 all:		${NAME}
 
 clean:
