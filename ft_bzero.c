@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:33:46 by lide              #+#    #+#             */
-/*   Updated: 2022/01/05 18:47:26 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/06 14:51:43 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
-	unsigned char *tmp;
+	size_t			i;
+	unsigned char	*tmp;
 
 	tmp = (unsigned char *)s;
 	i = 0;
-	while(i < n)
+	while (i < n)
 	{
 		tmp[i] = 0;
 		i++;

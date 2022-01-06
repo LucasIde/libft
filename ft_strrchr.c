@@ -6,16 +6,16 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/05 18:58:46 by lide              #+#    #+#             */
-/*   Updated: 2022/01/05 19:15:27 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/06 14:55:46 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
-	int j;
+	int	j;
 
 	i = 0;
 	j = -1;

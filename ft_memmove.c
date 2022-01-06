@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 17:06:01 by lide              #+#    #+#             */
-/*   Updated: 2022/01/05 18:32:21 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/06 14:50:07 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,27 +22,21 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (0);
 	a = (unsigned char *)dst;
 	b = (const unsigned char *)src;
-	i = 0;
+	i = -1;
 	if (dst >= src)
 	{
-		while (i < len)
-		{
+		while (++i < len)
 			a[len - i - 1] = b[len - i - 1];
-			i++;
-		}
 	}
 	else
 	{
-		while (i < len)
-		{
+		while (++i < len)
 			a[i] = b[i];
-			i++;
-		}
 	}
 	return (dst);
 }
-
-/*int main(void)
+/*
+int main(void)
 {
 	size_t len = 6;
 	char *tmp;
