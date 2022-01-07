@@ -1,27 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/01/06 19:47:57 by lide              #+#    #+#             */
-/*   Updated: 2022/01/07 17:41:30 by lide             ###   ########.fr       */
+/*   Created: 2022/01/07 15:26:58 by lide              #+#    #+#             */
+/*   Updated: 2022/01/07 17:42:58 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_tolower(int c)
 {
-	size_t			i;
-	unsigned char	*j;
-	unsigned char	*x;
-
-	j = (unsigned char *)s1;
-	x = (unsigned char *)s2;
-	i = 0;
-	while (j[i] == x[i] && i < n - 1)
-		i++;
-	return (j[i] - x[i]);
+	if (c >= 65 && c <= 90)
+		c += 32;
+	return (c);
 }

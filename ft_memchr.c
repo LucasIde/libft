@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 19:26:12 by lide              #+#    #+#             */
-/*   Updated: 2022/01/06 19:46:32 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/07 17:41:08 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
-	char *j;
+	char	*j;
 
 	j = (char *)s;
 	i = 0;
