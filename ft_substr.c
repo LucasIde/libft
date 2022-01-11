@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 13:02:02 by lide              #+#    #+#             */
-/*   Updated: 2022/01/10 13:52:33 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/11 09:39:33 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		start = ft_strlen(s);
 	s2 = malloc(sizeof(char) * (len + 1));
 	if (!s2)
-		return(NULL);
+		return (NULL);
 	i = 0;
 	while (s[start] && i < len)
 	{
@@ -42,4 +42,5 @@ int main(void)
 	a = ft_substr(s, 20, 12);
 	printf("%s", a);
 	return (0);
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:24:57 by lide              #+#    #+#             */
-/*   Updated: 2022/01/10 19:01:45 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/11 09:39:51 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	fin(char const *s1, char const *set, int len, int c1)
 			j++;
 		}
 		if (verif >= len)
-			return(len);
+			return (len);
 		len--;
 	}
 	return (len);
@@ -52,7 +52,7 @@ int	debut(char const *s1, char const *set)
 			j++;
 		}
 		if (verif <= i)
-			return(i);
+			return (i);
 		i++;
 	}
 	return (i);
@@ -71,7 +71,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return ((char *)s1);
 	len = ft_strlen(s1);
 	c1 = debut(s1, set);
-	c2 = fin(s1 ,set, len, c1);
+	c2 = 1 + fin(s1, set, len - 1, c1);
 	s2 = malloc(sizeof(char) * (1 + c2 - c1));
 	if (!s2)
 		return (0);
@@ -83,5 +83,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 		c1++;
 	}
 	s2[len] = 0;
-	return (0);
+	return (s2);
 }
+/*
+int main(void)
+{
+	printf("%s", ft_strtrim("",""));
+	return (0);
+}*/
