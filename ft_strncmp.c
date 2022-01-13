@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 18:52:52 by lide              #+#    #+#             */
-/*   Updated: 2022/01/07 17:41:59 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/13 19:37:28 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
 
+	if (n == 0)
+		return (0);
 	i = 0;
 	while (s1[i] && s1[i] == s2[i] && i < n - 1)
 		i++;
