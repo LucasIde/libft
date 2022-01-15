@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 18:37:16 by lide              #+#    #+#             */
-/*   Updated: 2022/01/13 13:22:39 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/15 17:50:42 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@
 // à supprimer avant de rendre
 # include <stdio.h>
 # include <string.h>
-//
+// chose a verif
+// pour les chr faut t'il caster en char le c / bonne maniere de diminuer l'int ?
+// mettre static sur les fonction anexes
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

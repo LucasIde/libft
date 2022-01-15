@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 15:35:13 by lide              #+#    #+#             */
-/*   Updated: 2022/01/06 18:48:06 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/15 18:10:53 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 /*
 int main(void)
 {
-	char dest[100] = "salut\0toi tu va bien ?";
-	char dest2[100] = "salut\0toi tu va bien ?";
-	const char s[] = " ca va";
-	size_t a = 3;
+	char dest[15] = "rrrrrrrrrrrrrrr";
+	char dest2[15] = "rrrrrrrrrrrrrrr";
+	const char s[] = "lorem ipsum dolor sit amet";
+	size_t a = 5;
 	size_t b;
 
 	b = strlcat(dest, s, a);

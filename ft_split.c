@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 09:42:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/11 17:30:23 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/15 15:38:18 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -97,7 +97,8 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	if (!s[0] && !c)
+	sep = words(s, c);
+	if ((!s[0] && !c) || sep == 0)
 	{
 		s1 = malloc(sizeof(char *));
 		if (!s1)
@@ -105,15 +106,11 @@ char	**ft_split(char const *s, char c)
 		s1[0] = NULL;
 		return (s1);
 	}
-	sep = words(s, c);
-	if (sep == 0)
-		return (NULL);
 	s1 = malloc(sizeof(char *) * (sep + 1));
 	if (!s1)
 		return (NULL);
 	return (ft_split2(s, c, s1));
 }
-
 /*
 int main(void)
 {
