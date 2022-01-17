@@ -6,13 +6,13 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:24:57 by lide              #+#    #+#             */
-/*   Updated: 2022/01/11 09:39:51 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/17 14:26:31 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	fin(char const *s1, char const *set, int len, int c1)
+static int	fin(char const *s1, char const *set, int len, int c1)
 {
 	int	j;
 	int	verif;
@@ -34,7 +34,7 @@ int	fin(char const *s1, char const *set, int len, int c1)
 	return (len);
 }
 
-int	debut(char const *s1, char const *set)
+static int	debut(char const *s1, char const *set)
 {
 	int	j;
 	int	i;

@@ -6,13 +6,13 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 09:42:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/15 15:38:18 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/17 14:25:52 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	words(char const *s, char c)
+static int	words(char const *s, char c)
 {
 	int	i;
 	int	nb;
@@ -35,7 +35,7 @@ int	words(char const *s, char c)
 	return (nb);
 }
 
-int	letter(char const *s, char c, int i)
+static int	letter(char const *s, char c, int i)
 {
 	int	nb;
 
@@ -48,7 +48,7 @@ int	letter(char const *s, char c, int i)
 	return (nb);
 }
 
-char	**freee(char **s1)
+static char	**freee(char **s1)
 {
 	int	i;
 
@@ -62,7 +62,7 @@ char	**freee(char **s1)
 	return (NULL);
 }
 
-char	**ft_split2(char const *s, char c, char **s1)
+static char	**ft_split2(char const *s, char c, char **s1)
 {
 	int	j;
 	int	j2;

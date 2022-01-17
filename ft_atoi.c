@@ -6,13 +6,13 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 15:34:56 by lide              #+#    #+#             */
-/*   Updated: 2022/01/12 15:04:39 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/17 14:23:52 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	atoi2(const char *str, int i, int x)
+static int	atoi2(const char *str, int i, int x)
 {
 	long	j;
 	long	tmp;

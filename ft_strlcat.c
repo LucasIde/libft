@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 15:35:13 by lide              #+#    #+#             */
-/*   Updated: 2022/01/15 18:10:53 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/17 13:58:15 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	j = 0;
-	while (dst[i])
+	while (dst[i] && i < dstsize)
 		i++;
 	if (dstsize > i)
 	{
@@ -28,8 +28,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 			dst[i + j] = src[j];
 			j++;
 		}
+		dst[i + j] = 0;
 	}
-	dst[i + j] = 0;
 	j = 0;
 	while (src[j])
 		j++;

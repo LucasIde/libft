@@ -6,13 +6,13 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 16:16:30 by lide              #+#    #+#             */
-/*   Updated: 2022/01/11 19:31:08 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/17 14:24:58 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(long n2)
+static int	count(long n2)
 {
 	long	tmp;
 	int		nb;
@@ -32,7 +32,7 @@ int	count(long n2)
 	return (nb);
 }
 
-char	*ft_itoa2(long n2, int nb)
+static char	*ft_itoa2(long n2, int nb)
 {
 	int		i;
 	char	*a;
