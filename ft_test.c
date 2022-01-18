@@ -94,4 +94,27 @@ int main(void)
 	return (0);
 }
 
+
+
+	t_list *tmp;
+
+	if (lst && f)
+	{
+		tmp = lst;
+		while (tmp)
+		{
+			list = malloc(sizeof(list));
+			if (!list)
+			{
+				ft_lstclear(&list, del);
+				return (NULL);
+			}
+			list->content = f(tmp->content);
+			list->next = tmp->next;
+			list = list->next;
+			tmp = tmp->next;
+		}
+		return (list);
+	}
+	return (NULL);
 */

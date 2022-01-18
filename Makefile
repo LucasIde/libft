@@ -6,7 +6,7 @@
 #    By: lide <lide@student.s19.be>                 +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/04 19:01:47 by lide              #+#    #+#              #
-#    Updated: 2022/01/17 19:23:52 by lide             ###   ########.fr        #
+#    Updated: 2022/01/18 14:55:37 by lide             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,10 @@ BONUS_SRCS	=	ft_lstnew.c\
 				ft_lstsize.c\
 				ft_lstlast.c\
 				ft_lstadd_back.c\
-				ft_lstdelone.c
+				ft_lstdelone.c\
+				ft_lstclear.c\
+				ft_lstiter.c\
+				ft_lstmap.c
 
 NAME		= libft.a
 CC			= gcc
