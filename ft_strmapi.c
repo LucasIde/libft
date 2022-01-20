@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:44:09 by lide              #+#    #+#             */
-/*   Updated: 2022/01/12 15:56:35 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/20 17:41:44 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 	char	*s2;
 
-	if (!s)
+	if (!s || !p)
 		return (NULL);
 	i = 0;
 	len = ft_strlen(s);
