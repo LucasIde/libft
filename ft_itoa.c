@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 16:16:30 by lide              #+#    #+#             */
-/*   Updated: 2022/01/17 14:24:58 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:29:54 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static char	*ft_itoa2(long n2, int nb)
 	char	*a;
 
 	i = 0;
-	a = malloc(sizeof(char) * (nb + 1));
+	a = (char *)malloc(sizeof(char) * (nb + 1));
 	if (!a)
 		return (NULL);
 	if (n2 < 0)
@@ -66,7 +66,7 @@ char	*ft_itoa(int n)
 	n2 = (long)n;
 	if (n2 == 0)
 	{
-		a = malloc(sizeof(char) * 2);
+		a = (char *)malloc(sizeof(char) * 2);
 		if (!a)
 			return (NULL);
 		a[0] = '0';
@@ -76,11 +76,3 @@ char	*ft_itoa(int n)
 	nb = count(n2);
 	return (ft_itoa2(n2, nb));
 }
-/*
-int main(void)
-{
-	int i = -0;
-	printf("%s", ft_itoa(i));
-	return (0);
-}
-*/

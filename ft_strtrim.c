@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:24:57 by lide              #+#    #+#             */
-/*   Updated: 2022/01/20 17:35:12 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:34:59 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,19 @@
 static int	fin(char const *s1, char const *set, int len, int c1)
 {
 	int	j;
-	int	verif;
+	int verif;
 
-	verif = len;
 	while (len > c1)
 	{
 		j = 0;
+		verif = 0;
 		while (set[j])
 		{
 			if (set[j] == s1[len])
-				verif--;
+				verif = 1;
 			j++;
 		}
-		if (verif >= len)
+		if (verif == 0)
 			return (len);
 		len--;
 	}
@@ -38,20 +38,20 @@ static int	debut(char const *s1, char const *set)
 {
 	int	j;
 	int	i;
-	int	verif;
+	int verif;
 
 	i = 0;
-	verif = 0;
 	while (s1[i])
 	{
 		j = 0;
+		verif = 0;
 		while (set[j])
 		{
 			if (set[j] == s1[i])
-				verif++;
+				verif = 1;
 			j++;
 		}
-		if (verif <= i)
+		if (verif == 0)
 			return (i);
 		i++;
 	}
@@ -65,14 +65,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	int		len;
 	char	*s2;
 
-	if (!s1)
+	if (!s1 || !set)
 		return (NULL);
-	if (!set)
-		return ((char *)s1);
 	len = ft_strlen(s1);
 	c1 = debut(s1, set);
 	c2 = 1 + fin(s1, set, len - 1, c1);
-	s2 = malloc(sizeof(char) * (1 + c2 - c1));
+	s2 = (char *)malloc(sizeof(char) * (1 + c2 - c1));
 	if (!s2)
 		return (0);
 	len = 0;
@@ -85,9 +83,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	s2[len] = 0;
 	return (s2);
 }
-/*
-int main(void)
-{
-	printf("%s", ft_strtrim("",""));
-	return (0);
-}*/

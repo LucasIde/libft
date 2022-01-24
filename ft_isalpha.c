@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 17:24:28 by lide              #+#    #+#             */
-/*   Updated: 2022/01/04 19:15:10 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:29:28 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,3 @@ int	ft_isalpha(int c)
 {
 	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
 }
-
-/*#include <ctype.h>
-int main(void)
-{
-	int c = 65;
-	int b;
-	b = isalpha(c);
-	printf("%d",b);
-	return (0);
-}*/

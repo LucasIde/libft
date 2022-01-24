@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 15:35:13 by lide              #+#    #+#             */
-/*   Updated: 2022/01/17 13:58:15 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:33:16 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,23 +37,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		return (dstsize + j);
 	return (i + j);
 }
-/*
-int main(void)
-{
-	char dest[15] = "rrrrrrrrrrrrrrr";
-	char dest2[15] = "rrrrrrrrrrrrrrr";
-	const char s[] = "lorem ipsum dolor sit amet";
-	size_t a = 5;
-	size_t b;
-
-	b = strlcat(dest, s, a);
-	printf("%zu\n", b);
-	printf("%s\n",s);
-	printf("%s\n",dest);
-	printf("-------------------------\n");
-	b = ft_strlcat(dest2, s, a);
-	printf("%zu\n", b);
-	printf("%s\n",s);
-	printf("%s\n",dest2);
-	return (0);
-}*/

@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 17:06:01 by lide              #+#    #+#             */
-/*   Updated: 2022/01/06 14:50:07 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:31:34 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-/*
-int main(void)
-{
-	size_t len = 6;
-	char *tmp;
-	char a[] = {"comment"};
-	const char b[] = {"bonjour"};
-
-	tmp = ft_memmove(a, b, len);
-	printf("%s", tmp);
-	return (0);
-}*/

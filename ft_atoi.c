@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 15:34:56 by lide              #+#    #+#             */
-/*   Updated: 2022/01/17 14:23:52 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:28:51 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,10 +52,3 @@ int	ft_atoi(const char *str)
 	}
 	return (atoi2(str, i, x));
 }
-/*
-int main(void)
-{
-	printf("%d\n", atoi("59595959595"));
-	printf("%d\n", ft_atoi("59595959595"));
-	return (0);
-}*/

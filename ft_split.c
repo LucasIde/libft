@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 09:42:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/20 17:38:53 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:32:21 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ static char	**ft_split2(char const *s, char c, char **s1)
 		j2 = 0;
 		if (s[i])
 		{
-			s1[j] = malloc(sizeof(char) * (letter(s, c, i) + 1));
+			s1[j] = (char *)malloc(sizeof(char) * (letter(s, c, i) + 1));
 			if (!s1)
 				return (freee(s1));
 			while (s[i] && s[i] != c)
@@ -100,30 +100,14 @@ char	**ft_split(char const *s, char c)
 	sep = words(s, c);
 	if ((!s[0] && !c) || sep == 0)
 	{
-		s1 = malloc(sizeof(char *));
+		s1 = (char **)malloc(sizeof(char *));
 		if (!s1)
 			return (NULL);
 		s1[0] = NULL;
 		return (s1);
 	}
-	s1 = malloc(sizeof(char *) * (sep + 1));
+	s1 = (char **)malloc(sizeof(char *) * (sep + 1));
 	if (!s1)
 		return (NULL);
 	return (ft_split2(s, c, s1));
 }
-/*
-int main(void)
-{
-	char *s = "\0";
-	char **save;
-	int i;
-
-	i = 0;
-	save = ft_split(s, '\0');
-	while (save[i])
-	{
-		printf("%s\n", save[i]);
-		i++;
-	}
-	return (0);
-}*/

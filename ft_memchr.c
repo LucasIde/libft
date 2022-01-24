@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/06 19:26:12 by lide              #+#    #+#             */
-/*   Updated: 2022/01/17 13:28:16 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:31:03 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	unsigned char	*j;
 	unsigned char	c2;
 
-	if (!n)
-		return (NULL);
+	//if (!n)
+	//	return (NULL);?
 	c2 = (unsigned char)c;
 	j = (unsigned char *)s;
 	i = 0;

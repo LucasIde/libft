@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 15:44:09 by lide              #+#    #+#             */
-/*   Updated: 2022/01/20 17:41:44 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/22 14:17:42 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 	char	*s2;
 
-	if (!s || !p)
+	if (!s || !f)
 		return (NULL);
 	i = 0;
 	len = ft_strlen(s);
-	s2 = malloc(sizeof(char) * (len + 1));
+	s2 = (char *)malloc(sizeof(char) * (len + 1));
 	if (!s2)
 		return (NULL);
 	while (s[i])

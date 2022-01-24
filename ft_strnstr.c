@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/07 13:45:53 by lide              #+#    #+#             */
-/*   Updated: 2022/01/07 17:43:07 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:33:56 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-int main(void)
-{
-	char *s1 = "A";
-	char *i1 = strnstr(s1, s1, 2);
-	char *i2 = ft_strnstr(s1, s1, 2);
-	printf("%s\n",i1);
-	printf("%s\n",i2);
-	return (0);
-}
-*/

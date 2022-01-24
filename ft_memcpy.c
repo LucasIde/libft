@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 15:01:56 by lide              #+#    #+#             */
-/*   Updated: 2022/01/06 14:52:28 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:31:26 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,24 +30,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-/*
-int main(void)
-{
-    int array [] = { 'A', 'B', 'C', 'D', 'E'};
-    int * copy = NULL;
-    int length = sizeof( int ) * 5;
-
-    // Memory allocation and copy
-    copy = (int *) malloc( length );
-    memcpy( copy, array, length );
-
-    // Display the copied values
-    for( length=0; length<5; length++ ) {
-        printf( "%d ", copy[ length ] );
-    }
-    printf( "\n" );
-
-    free( copy );
-
-    return EXIT_SUCCESS;
-}*/

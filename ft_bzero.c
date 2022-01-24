@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 14:33:46 by lide              #+#    #+#             */
-/*   Updated: 2022/01/07 19:13:05 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:28:15 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,27 +26,3 @@ void	ft_bzero(void *s, size_t n)
 	}
 	s = tmp;
 }
-/*
-int main(void)
-{
-    int array [] = {54, 85, 20, 63, 21};
-    size_t size = sizeof( int ) * 4;
-    int length;
-
-    //Display the initial values
-    for( length=0; length<5; length++) {
-        printf( "%d ", array[ length ] );
-    }
-    printf( "\n" );
-
-    // Reset the memory bloc
-    ft_bzero(array, size);
-
-    // Display the new values
-    for( length=0; length<5; length++) {
-        printf( "%d ", array[ length ] );
-    }
-    printf( "\n" );
-
-    return 0;
-}*/

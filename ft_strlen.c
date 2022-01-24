@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 17:25:13 by lide              #+#    #+#             */
-/*   Updated: 2022/01/11 09:38:20 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/24 17:33:30 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-/*
-int main(void)
-{
-	const char s[] = "salutcava";
-	printf("%lu",strlen(s));
-}*/
