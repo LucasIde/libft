@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 18:00:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/24 17:15:49 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/25 00:51:59 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,11 +39,3 @@ void	ft_putnbr_fd(int n, int fd)
 	if ((long)n % 10 == 0)
 		write (fd, "0", 1);
 }
-/*
-int main(void)
-{
-	int i = 01835;
-	ft_putnbr_fd(i, 1);
-	return (0);
-}*/
-// corriger le bug
