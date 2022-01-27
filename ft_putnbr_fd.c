@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 18:00:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/27 12:57:49 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/27 18:39:34 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,24 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long	rev_n;
-	long	tmp;
-	char	nb;
+	long n2;
+	char n3;
 
-	tmp = n;
-	rev_n = 0;
-	if (tmp < 0)
+	n2 = n;
+	if (n2 < 0)
 	{
+		n2 *= -1;
 		write(fd, "-", 1);
-		tmp *= -1;
 	}
-	while (tmp > 0)
+	if (n2 > 9)
 	{
-		rev_n *= 10;
-		rev_n += tmp % 10;
-		tmp /= 10;
+		ft_putnbr_fd((n2 / 10), fd);
+		n3 = (n2 % 10) + '0';
+		write(fd, &n3, 1);
 	}
-	while (rev_n > 0)
+	else
 	{
-		nb = (rev_n % 10) + '0';
-		rev_n /= 10;
-		write(fd, &nb, 1);
+		n3 = (n2 % 10) + '0';
+		write(fd, &n3, 1);
 	}
-	if ((long)n % 10 == 0)
-		write (fd, "0", 1);
 }
