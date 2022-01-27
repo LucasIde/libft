@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/12 18:00:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/25 00:51:59 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/27 12:57:49 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	ft_putnbr_fd(int n, int fd)
 	long	rev_n;
 	long	tmp;
 	char	nb;
+
 	tmp = n;
 	rev_n = 0;
 	if (tmp < 0)

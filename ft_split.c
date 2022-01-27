@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/11 09:42:19 by lide              #+#    #+#             */
-/*   Updated: 2022/01/24 17:32:21 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/27 13:00:54 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,7 @@ static char	**ft_split2(char const *s, char c, char **s1)
 		if (s[i])
 		{
 			s1[j] = (char *)malloc(sizeof(char) * (letter(s, c, i) + 1));
-			if (!s1)
+			if (!s1[j])
 				return (freee(s1));
 			while (s[i] && s[i] != c)
 				s1[j][j2++] = s[i++];

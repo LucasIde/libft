@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:24:57 by lide              #+#    #+#             */
-/*   Updated: 2022/01/24 17:34:59 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/27 12:59:45 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	fin(char const *s1, char const *set, int len, int c1)
 {
 	int	j;
-	int verif;
+	int	verif;
 
 	while (len > c1)
 	{
@@ -38,7 +38,7 @@ static int	debut(char const *s1, char const *set)
 {
 	int	j;
 	int	i;
-	int verif;
+	int	verif;
 
 	i = 0;
 	while (s1[i])

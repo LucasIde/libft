@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/04 18:37:16 by lide              #+#    #+#             */
-/*   Updated: 2022/01/25 00:52:18 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/27 14:02:25 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-
-// à supprimer avant de rendre
-# include <stdio.h>
-# include <string.h>
-// chose a verif
-//lstclear  passer dans le testeur 
 
 typedef struct s_list
 {
