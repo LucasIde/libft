@@ -6,7 +6,7 @@
 #    By: lide <lide@student.s19.be>                 +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/01/04 19:01:47 by lide              #+#    #+#              #
-#    Updated: 2022/01/28 14:50:16 by lide             ###   ########.fr        #
+#    Updated: 2022/01/31 15:37:09 by lide             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,14 +57,11 @@ BONUS_SRCS	=	ft_lstnew.c\
 
 NAME		= libft.a
 CC			= gcc
-FLAGS		= -Wall -Wextra -Werror
+CFLAGS		= -Wall -Wextra -Werror
 OBJS		= ${SRCS:.c=.o}
 BONUS_OBJS	= ${BONUS_SRCS:.c=.o}
 LIBC		= ar -rc
 RM			= rm -f
-
-%.o:%.c
-			${CC} ${FLAGS} -c $< -o $@
 
 ${NAME}:	${OBJS}
 			${LIBC} ${NAME} ${OBJS}

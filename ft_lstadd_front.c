@@ -6,7 +6,7 @@
 /*   By: lide <lide@student.s19.be>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/17 17:08:53 by lide              #+#    #+#             */
-/*   Updated: 2022/01/17 18:12:23 by lide             ###   ########.fr       */
+/*   Updated: 2022/01/31 15:35:44 by lide             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_lstadd_front(t_list **alst, t_list *new)
 {
+	if (!(alst || *alst || new))
+	return ;
 	new->next = *alst;
 	*alst = new;
 }
